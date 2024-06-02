@@ -1,0 +1,296 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(0, 191, 255);
+  background-image: url('Images/Track Coney Thumbnail_6.png')
+}
+
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* Navbar Styles */
+#navbar {
+  background-color: rgb(25, 25, 25);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* margin: 20px; */
+  z-index: 1000;
+  background-image: url('Images/Track Coney Thumbnail_6.png')
+}
+
+#navbar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+#navbar ul li {
+  display: inline-block;
+  margin: 20px;
+  border: 10px solid rgb(128, 0, 128);
+  animation: borderGlow 2s infinite alternate;
+  background-color: rgb(25, 25, 25);
+}
+
+@keyframes borderGlow {
+  0% {
+    border-color: rgb(128, 0, 128); 
+  }
+  50% {
+    border-color: rgb(255, 0, 255); 
+  }
+  100% {
+    border-color: rgb(128, 0, 128);
+  }
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Gothic Font Name', sans-serif;
+  animation: textGlow 5s infinite alternate;
+  color: rgb(255, 255, 0)
+}
+
+@keyframes textGlow {
+  0% {
+    color: rgb(255, 255, 0); 
+  }
+  50% {
+    color: rgb(255, 0, 0); 
+  }
+  100% {
+    color: rgb(255, 255, 0); 
+  }
+}
+
+/* Welcome Section Styles */
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-image: url('Images/Track Coney Thumbnail_6.png')
+}
+
+#welcome-section > div {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#welcome-section h1 {
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Gothic Font Name', sans-serif;
+  animation: flamingGlow 2s infinite alternate;
+  color: rgb(255, 255, 0);
+}
+
+@keyframes flamingGlow {
+  0% {
+    text-shadow: 0 0 5px red,
+                 0 0 15px orange,
+                 0 0 25px orange,
+                 0 0 35px orange,
+                 0 0 45px orange;
+  }
+  100% {
+    text-shadow: 0 0 10px red,
+                 0 0 20px orange,
+                 0 0 30px orange,
+                 0 0 40px orange,
+                 0 0 50px orange;
+  }
+}
+
+#welcome-section p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(255, 255, 0);
+  animation: textGlow 10s infinite alternate;
+}
+
+/* Projects Section Styles */
+#projects {
+  padding: 50px 0;
+  text-align: center;
+  background-image: url('Images/Track Coney Thumbnail_6.png')
+}
+
+#projects .project-tile John-Romero-Tribute,
+#projects .project-tile PC-Gaming-Survey-Form {
+  background-color: rgb(238, 130, 238, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  background-image: url('Images/Track Coney Thumbnail_6.png')
+}
+
+#projects h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-family: 'Gothic Font Name', sans-serif;
+  animation: flamingGlow 2s infinite alternate;
+  color: rgb(255, 255, 0);
+  font-weight: bold;
+}
+
+#projects p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: rgba(255, 255, 0, 0.7);
+  animation: textGlow 10s infinite alternate;
+  background-color: black;
+}
+
+iframe {
+  height: 450px;
+  border: 5px solid rgba(128, 0, 128, 0.5); 
+  border-radius: 10px;
+  animation: borderGlow 2s infinite alternate; 
+}
+
+#projects a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Gothic Font Name', sans-serif;
+  color: rgb(255, 255, 0);
+  font-weight: bold;
+  animation: borderGlow 2s infinite alternate, textGlow 2s infinite alternate;
+  border: 10px solid rgba(128, 0, 128, 0.5);
+  font-size: 1.5em;
+}
+
+/* Creative Showcase Section Styles */
+#creative-showcase {
+  padding: 50px 0;
+  background-image: url('Images/Track Coney Thumbnail_6.png')
+}
+
+#creative-showcase h2 {
+  margin-bottom: 10px;
+  font-family: 'Gothic Font Name', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: rgb(255, 255, 0);
+  animation: flamingGlow 2s infinite alternate;
+}
+
+#creative-showcase h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: rgba(255, 255, 0, 0.7);
+  animation: textGlow 10s infinite alternate;
+  background-color: black;
+}
+#creative-showcase p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: rgba(255, 255, 0, 0.7);
+  animation: textGlow 10s infinite alternate;
+  background-color: black;
+}
+
+.video-container {
+  margin-bottom: 30px;
+}
+
+.video-container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Gothic Font Name', sans-serif;
+}
+
+.video-container video {
+  width: 100%;
+  border: 1px solid rgba(128, 0, 128, 0.5);
+}
+
+.video-container p {
+  margin-top: 10px;
+}
+
+img {
+  height: 350px;
+  border: 10px solid rgba(128, 0, 128, 0.5);
+  border-radius: 20px;
+  animation: borderGlow 2s infinite alternate;
+}
+
+.channel-info {
+  text-align: center;
+}
+
+.channel-info img {
+  display: block;
+  margin: 0 auto;
+}
+
+.channel-info p {
+  font-size: 2em;
+  margin-top: 0;
+  font-family: 'Gothic Font Name', sans-serif;
+  animation: flamingGlow 2s infinite alternate;
+  color: rgb(255, 255, 0);
+  font-weight: bold;
+}
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  #navbar ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #welcome-section h1 p {
+    font-size: 1.5rem; 
+  }
+
+  iframe {
+    height: 200px;
+  }
+
+  .project-tile-John-Romero-Tribute {
+    padding: 10px;
+  }
+
+  .project-tile-John-Romero-Tribute {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}

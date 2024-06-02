@@ -1,0 +1,127 @@
+/*During my last project, I tried to write clearer CSS. The order of my CSS starts with the elements on the top and goes to the bottom. I tried to first tackle the most general elements, then style particular elements and then have chosen IDs and classes. I commented my CSS to make it clearer to understand my thoughts.*/
+
+/*General Elements*/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #003C43;
+  color: #E3FEF7;
+}
+
+footer {
+  background-color: #77B0AA;
+  display: flex;
+}
+
+/*Particular elements*/
+
+nav {
+  background-color: #135D66;
+  position: fixed;
+  width: 98%;
+  top: 0;
+  left: 0.5%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+li {
+  list-style: none;
+  font-size: 18px;
+}
+
+img {
+  display: block;
+  max-width: 60%;
+}
+
+h1, h2 {
+  font-family: "Rubik", sans-serif;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+figcaption {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/*IDs*/
+#welcome-section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 50px;
+}
+
+#avatar {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
+}
+
+#welcome-text {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: center;
+}
+
+/*classes*/
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: block;
+}
+
+.project-image {
+  border: 2px solid #ee687c;
+  box-shadow: 4px 4px #E3FEF7, 8px 8px #77B0AA, 12px 12px #135D66, 16px 16px #ee687c;
+}
+
+a:link {
+  color: #77B0AA;
+}
+
+a:hover {
+  color: #E3FEF7;
+}
+
+a:visited {
+  color: #ee687c;
+}
+
+@media screen {
+  body {
+    min-width: 300px;
+  }
+}
+/*
+I have created my avatar on https://bloggerpilot.com/tools/avatar-generator/. It is free to use. Here is the original text: "Freie Nutzung
+Deinen Avatar darfst du verwenden, wo immer du möchtest. Teile ihn auf Twitter, Facebook, Instagram oder WhatsApp. Am besten nutzt du dein Avatar Bild aber direkt als Profilbild in den sozialen Netzwerken."*/

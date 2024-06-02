@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{background-color:#e9f0ca;
+    font-family:Oswald, sans-serif;
+    }
+ h1, h2, h3{font-family:Roboto, sans-serif;}
+#navbar {position:sticky; top:10px;
+display:flex;
+color:black;
+background-color:#cbd58b;
+height:12vh; 
+width: 100vw; font-family:Oswald, sans-serif;
+  border:3px solid #465c30; padding:4px; 
+ } 
+
+
+#navbar ul {display:flex; width:100vw;
+list-style: none; justify-content: space-around; font-size:1.5em; 
+ }
+li a {color:#3F4D2D; text-decoration:none;}
+
+ #welcome-section{height:100vh; font-family:Oswald, sans-serif;}
+  h1{font-size:2.5rem; color:black; text-align:center; margin-top:100px;}
+ #welcome-section h3{font-size:2rem; color:black; text-align:center; margin-top:15px;}
+ #welcome-section p{font-size:1.5rem; color:black; align-content:center; margin:25px;}
+#welcome-section img{ width:20vw; height:20vh;display:block;margin:auto;}
+
+ h3{font-size:2rem; color:black; margin-top:5px; margin-bottom:50px; margin-left:20px}
+
+
+
+#projects{display:flex; height:100vh;}
+
+
+.project-tile img{ width:30vw; height:25vh;display:flex; flex-direction:column; justify-content:center; align-items:center; gap:5px; margin:20px;}
+
+ div h4{ font-size:1rem; background-color: #564930; color:#e9f0ca;width:30vw; text-align:center; margin:20px; }
+
+div h4 a{text-decoration:none;color:#e9f0ca}
+
+@media screen and (max-width: 576px) {
+
+  #navbar ul{
+    font-size: 1em; display: block; 
+  }
+
+
+  #projects {display: block;}}
+

@@ -1,0 +1,70 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  color: rgb(3, 157, 252);
+}
+
+
+head {
+  display: flex;
+  align-items: center;
+  height: 100vh; 
+  position: fixed;
+  top: 0;
+}
+
+#welcome-section {
+  height: 100vh;
+}
+
+main section {
+  margin-top: 500px;
+  margin-bottom: 200px;
+}
+
+.varta-title {
+  font-family: "Varta", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+
+#surveypage {
+  width: 800px;
+  height: 800px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 2em;
+  color: white;
+}
+
+
+nav li a:hover { 
+  color: yellow;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  header nav ul {
+    display: flex;
+  }
+  .varta-title {
+    font-size: 1.5em;
+  }
+}

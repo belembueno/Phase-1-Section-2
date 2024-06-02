@@ -1,0 +1,108 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+
+
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2022/09/15/06/14/pattern-7455773_1280.png);
+  background-size: cover;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  background: rgb(3, 194, 205);
+  background: linear-gradient(277deg, rgba(3, 194, 205, 1) 8%, rgba(3, 126, 205, 1) 25%, rgba(3, 126, 205, 1) 45%, rgba(3, 137, 205, 1) 59%, rgba(3, 137, 205, 1) 77%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+#li-1, #li-2, #li-3 {
+  display: inline-block;
+  padding: 10px 10px;
+
+  font-size: 40px;
+
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+}
+
+.nav-link:hover {
+  color: #faab18;
+  transition: color 0.3s;
+  ;
+}
+
+
+
+#welcome-section {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: #4d0e76;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 0.10968137254901966) 100%);
+  border-bottom: 2px solid #4d0e76;
+}
+
+#profile-link,
+#profile-link_2,
+#profile-link_3 {
+  color: #8d24a8;
+  font-size: 25px;
+  margin: 0 30px;
+}
+
+#profile-link:hover,
+#profile-link_2:hover,
+#profile-link_3:hover {
+  color: teal;
+  transition: color 0.3s;
+}
+
+#contact_info {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #4d0e76;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 0.10968137254901966) 100%);
+}
+
+p {
+  font-size: 30px;
+}
+
+#p2 {
+  font-size: 30px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #4d0e76;
+}
+
+ footer {
+  border-top: 2px solid #4d0e76;
+}

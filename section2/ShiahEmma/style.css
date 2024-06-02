@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1034.ani), url(https://cur.cursors-4u.net/nature/nat-11/nat1034.gif), auto !important;
+}
+
+h1, h2{
+  font-family: Nunito, open-sans;
+  font-weight: 700;
+  text-align: center;
+}
+
+body{
+  font-family: Nunito, open-sans;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+  color: #5784ba;
+  margin-bottom: 1rem;
+}
+
+form{
+  display:flex;
+  flex-flow: column;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+
+/* navigation */
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f7f6cf;
+  box-shadow: 0px 5px 16px #9AC8EB;
+}
+
+.toplist{
+  display: flex;
+  margin: 1.5rem 1rem;
+}
+
+li{
+  margin-left: 1rem;
+  font-size: 1.25rem;
+}
+
+.toplist a{
+  color: #5784ba;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1029.ani), url(https://cur.cursors-4u.net/nature/nat-11/nat1029.gif), auto !important;
+}
+
+.toplist a:hover{
+  color:#e57ff0;
+}
+
+/* Welcome Section */
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(255,222,250,1) 0%, rgba(239,247,255,1) 100%);
+}
+
+.welcome-section > h1{
+  margin-bottom: 3rem;
+  color: #5784ba;
+}
+
+.welcome-section > p{
+  margin: 0 1rem;
+  font-size: 1.25rem;
+}
+
+/* Projects Section */
+.projects-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #dbf0ff;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  width: 100%;
+  max-width: 1024px;
+  margin: 2rem auto 3rem auto;
+}
+
+.project-tile {
+  border-radius: 8px;
+ 
+}
+
+.project-title:hover{
+    color: #e57ff0;
+}
+
+.project-title{
+  background: #f7f6cf;
+  padding: 1rem;
+  color: #000;
+  border-radius: 0 0 8px 8px;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1029.ani), url(https://cur.cursors-4u.net/nature/nat-11/nat1029.gif), auto !important;
+}
+
+
+#profile-link{
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  background: #f4cfdf;
+  font-weight: 700;
+  color: #000;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1029.ani), url(https://cur.cursors-4u.net/nature/nat-11/nat1029.gif), auto !important;
+}
+
+#profile-link:hover{
+  color: #e57ff0;
+  border-radius: 4px;
+}
+
+.project-image{
+  width: 100%;
+  height: calc(100% - 3.375rem);;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+}
+
+.project-tile:hover{
+  border: 2px solid #e57ff0;
+}
+
+/* Feedback Section */
+.feedback-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: radial-gradient(circle, rgba(255,222,250,1) 0%, rgba(239,247,255,1) 100%);
+}
+
+label{
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+form{
+  width: 50%;
+  margin: 0 auto;
+}
+
+#name, #email{
+  height: 2rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+textarea{
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  height: 80px;
+}
+
+.feedback-section p {
+  margin: 2rem 0 1rem 0;
+}
+
+#submit{
+  margin: 1rem auto 0 auto;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #5784ba;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 2.5px solid #5784ba;
+  background-color: #f4cfdf;
+  width: 160px;
+  height: 48px;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1029.ani), url(https://cur.cursors-4u.net/nature/nat-11/nat1029.gif), auto !important;
+}
+
+#submit:hover{
+  color: #e57ff0;
+  border: 2.5px solid #e57ff0;
+}
+
+/* tablet media query */
+
+@media screen and (max-width: 768px) {
+  .welcome-section, .feedback-section{
+    background: radial-gradient(circle, rgba(239,247,255,1) 0%, rgba(255,222,250,1) 100%);
+  }
+  #submit{
+    background-color: #f4f1fa;
+  }
+  #profile-link{
+    background-color: #f4f1fa;
+  }
+}
+

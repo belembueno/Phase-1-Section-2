@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portfolio</title>
+  <!--My first font is Rubik-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!--My second font is Josefin Sans-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="welcome-section">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!--The first section contains my welcome-page.-->
+  <section id="welcome-section">
+    <img src="images/myavatar.png " alt="Showing an avatar picture of a woman" class="avatar" id="avatar">
+    <h1 id="welcome-text">Welcome to my personal portfolio!</h1>
+  </section>
+  <hr>
+  
+  <!--In the main section I am presenting my projects during this course. They are the main protagonists of this webpage. Therefore I have decided to put them into a <main> element.-->
+  <h2>My Projects</h2>
+    <main id="projects" class="projects-section">
+      <figure id="project-one">
+        <img src="images/writtenwordworshiping.PNG" class="project-image" id="first-project" alt="Picute of my first project.">
+        <figcaption class="project-tile"><a href="#first-project" target="_blank">My Tribute Page</a></figcaption>
+      </figure>
+      <figure id="project-two">
+        <img src="images/soundfm.PNG" class="project-image" id="second-project" alt="Picture of my second project.">
+        <figcaption class="project-tile"><a href="#second-project" target="_blank">My Survey Form</a></figcaption>
+      </figure>
+    </main>
+  <hr>
+  
+  <!--In this section I am giving more information about myself.-->
+  <section id="about">
+    <h2>About</h2>
+      <p>My name is Ana and I studied HTML & CSS thanks to <em>Project Code</em>. Here is some additional information about me.</p>
+      <p>I have decided to apply for this course, because I wanted to prove myself that I can learn an IT-related topic. Understanding how a website is created, helped me to overcome my fear. I felt embraced that I could not follow a conversation when talking about problems related to IT.</p>
+      <p>After this course I want to learn a programming language. I am convinced that I will be able to tackle this challenge and master it. During the course I have become more confident in my skills.</p>
+       <p>Thank you very much for offering it and giving students the opportunity to change their personal situation.💐</p>
+  </section>
+  <hr>
+  
+  <!--Here I am giving the link to my freecodecamp-profile.-->
+  <section id="contact">
+    <h2>Contact</h2>
+      <p>Former student at NYPL's TechConnect. You can find me on freecodecamp as <a href="https://www.freecodecamp.org/annie_student" target="_blank" id="profile-link">annie_student</a>.</p>
+  </section>
+  <br>
+
+  <!--At the end of my page I included a footer.-->
+  <footer>
+    <p>Ana<br><br>Former student at NYPL's program <em>Project Code: Frontend Web Development (Phase 1)</em>.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

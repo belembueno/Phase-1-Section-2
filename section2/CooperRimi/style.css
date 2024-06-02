@@ -1,0 +1,202 @@
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+} 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  color: #382c2b;
+  background-color: #dfd5e3;
+  font-family: 'Rubik', san-serif;
+  scroll-behavior:smooth;
+  margin-top: 100px;
+  font-size: 2rem;
+  height: 100%;
+
+
+
+}
+#navbar{
+  
+  display: flex;
+  position: fixed;
+  width:100vw;
+  z-index: 1;
+  background-color: #2C2A2B;
+  margin: auto;
+  top: 0;
+  height: 25vh;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 25px 0 yellow; 
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#navbar img {
+    height: 20vh;
+    margin:0;
+    padding: 0;
+    position: relative;
+}
+
+nav a:hover{
+  cursor: pointer;  
+  background-color: #B8860B;
+  color: #0B3FB8; 
+  border-radius: 10% 22%;
+  padding: 10px;
+
+  }
+
+
+ul li a{
+  text-decoration: none;
+  color: blueviolet;
+  display: flex;
+  justify-content: center;
+ 
+}
+#navbar ul{
+  list-style-type: none;
+  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 105%;
+}
+
+#navbar li{
+  margin: 50px;
+  font-size:2rem;
+}
+
+#welcome-section{
+  
+  background-color: #545253;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+  font-size: 2em;
+  color: #B8860B;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top:0;
+  line-height: 2;
+  
+}
+
+#welcome-section p{
+  color: #BB29BB;
+  font-size:.5em;
+}
+
+#projects{
+
+  position: absolute;
+  display: flex;
+  height: 185vh; 
+  width: auto;
+justify-content: center;
+  padding-top:20rem;
+  background-color:#766D56;
+}
+
+
+.projects-section-header{
+  font-size: 3rem;
+  margin: 10px;
+  padding: 10px;
+  
+}
+
+#projects a{
+  text-decoration: none;
+  color: #B8860B;
+  font-size: 1em;
+ 
+}
+
+.project-tile{
+  height: auto;
+   max-width: 25vw;
+  
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  column-gap: 10px;
+  margin-top: 3px;
+  padding: 2px ;
+  
+}
+
+.projects-grid a:hover{
+  cursor: pointer;  
+  background-color: #0B3FB8; 
+  border-radius: 10% 22%;
+  padding: 10px;
+  height: 50px;
+  }
+
+
+#contact{
+
+  margin-top: 50.2em;
+  display:flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  background-color:black;
+  color:whitesmoke;
+  width: auto;
+  height:15vh;
+}
+
+#contact a:hover{
+  cursor: pointer;  
+  background-color: #B8860B;
+  color: #0B3FB8; 
+  border-radius: 10% 22%;
+  padding: 10px;
+  }
+
+#contact a{
+  display:block;
+  margin-top: 1px;
+  color: #B8860B;
+  font-size: 1rem;
+  padding-left:  .4em;
+  text-decoration: none;
+  
+}
+
+
+
+
+@media screen and (max-width: 377px) {
+  /* For mobile phones: */
+   section h1 p {
+    font-size: .8em;
+    display: block; 
+  }
+}
+
+
+
