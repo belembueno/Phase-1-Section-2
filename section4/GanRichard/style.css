@@ -1,0 +1,66 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+#welcome-section {
+  box-sizing: border-box;
+  border: 2px solid #f40606;
+  min-height: 100vh;
+}
+
+#projects {
+  border: 2px solid #0202f2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project-tile {
+  border: 2px solid #f6a104;
+}
+
+.project-tile img {
+  width: 100%;
+  height: 90%;
+}
+
+#contact {
+  border: 2px solid #028802;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  background-color: #f1f104;
+  gap: 16px;
+  margin: 0px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+@media (max-width: 600px) {
+  #projects {
+    display: block;
+  }
+}
+
+#projects h2 {
+  grid-column: span 2;
+}
+
+@media (max-width: 500px) {
+ nav {
+  font-size: .9em;
+ }
+}

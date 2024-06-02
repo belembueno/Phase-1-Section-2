@@ -1,0 +1,158 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+	background-color: #4C9085;
+	font-family: poppins, sans-serif;
+	font-size: 24px;
+	color: #F7E7CE;
+	box-sizing: border-box;
+}
+
+#navbar {
+	/* border: 2px solid yellow; */
+	height: 10%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #D38D85;
+	/* border: 2px solid #F7E7CE; */
+
+}
+
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	gap: 35px;
+	margin: 0;
+	justify-content: right;
+	/* border: red 2px solid; */
+	padding: 10px 0px;
+	margin-top: 20px;
+	margin-right: 15px;
+	font-variant: small-caps;
+	font-size: 25px;
+}
+
+
+#welcome-section {
+	/* border: 2px solid red; */
+	min-height: 100vh;
+	margin-top: 100px;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 75px;
+	padding-top: 10%;
+}
+
+h3 {
+text-align: center;
+}
+
+
+#welcome-section p {
+	text-align: center;
+	font-size: 50px;
+}
+
+#about-me {
+	/* border: 2px solid magenta;	 */
+}
+
+#about-me-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.about-tile {
+	padding: 30px 20px;
+	/* border: 3px purple dotted; */
+	margin: 20px 0;
+}
+
+#projects {
+	/* border: 2px solid yellow; */
+	background-color: #D38D85;
+	padding-bottom: 20px;
+}
+
+#project-tiles {
+	/* border: 2px solid dodgerblue; */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.project-tile {
+	/* border: 2px dotted orange; */
+}
+
+
+img {
+	display: block;
+	margin: auto;
+	max-width: 75%;
+	max-height: 75%;
+}
+
+
+#contact {
+	/* border: 2px solid lime; */
+	padding-bottom: 20px;
+}
+
+
+a {
+	color: #F7E7CE;
+}
+ a:visited {
+	color: #F7E7CE;
+ }
+
+#about-me a:hover {
+	background-color: #F7E7CE;
+	color: #4C9085;
+}
+ 
+#contact a:hover {
+	background-color: #F7E7CE;
+	color: #4C9085;
+
+}
+
+#projects a:hover {
+	background-color: #F7E7CE;
+	color: #D38D85;
+}
+
+#navbar a {
+	text-decoration: none;
+}
+
+#navbar a:hover {
+	background-color: #F7E7CE;
+	color: #D38D85;
+}
+
+
+@media (max-width: 700px) {
+	#project-tiles {
+		display: block;
+	}
+
+	#about-me-grid {
+		display: block;
+	}
+	
+	#pac {
+		/* max-width: 75%; */
+	}
+}

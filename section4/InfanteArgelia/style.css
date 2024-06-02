@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'open sans', sans-serif;
+}
+a{
+  color: rgba(189, 117, 189, 1.0);
+}
+a:hover{
+  color: rgba(23, 151, 23, 1.0);
+}
+
+#welcome-section{
+  /* border: solid 5px green; */
+  min-height: 100vh;
+  background-image: url(images/NYC\ skyline.jpg);
+  background-size: cover;
+  background-position: center;
+  }
+#welcome-section h1 {
+  margin-top: 60px;
+  color: rgba(255, 255, 255, 1.0);
+}
+#projects{
+  /* border: solid 3px blue; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: rgba(245, 168, 168, .5);
+  }
+#projects h2{
+  grid-column: span 2;
+  text-align: center;
+}
+.project-tile{
+  /* border: 2px solid orange;*/
+  
+}
+#navbar ul{
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  background-color: rgba(32, 178, 170, .5);
+  gap: 16px;
+  margin: 0px;
+  height: 5vh;
+  font-size: 2rem;
+  }
+#navbar{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  }
+#trib{
+  height: 40vh;
+  width: 50vw;
+  margin: auto;
+  background-image: url(images/Jane\ Austen\ Portrait.png);
+  background-size: cover;
+  background-position: center;
+}
+#surv{
+  height: 40vh;
+  width: 50vw;
+  margin: auto;
+  background-image: url(images/baseball\ stadium.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#surv p{
+  color: rgba(255, 255, 255, 1.0);
+}
+#contact{
+  background-color: rgb(181, 181, 181, .5);
+}
+#contact p{
+  font-size: 18px;
+}
+@media (max-width: 650px) {
+  #projects{
+    display: block;
+  }
+}

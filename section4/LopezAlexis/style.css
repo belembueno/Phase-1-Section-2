@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#welcome-section {
+  min-height: 100vh;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+  background-color: #000033;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-text{
+  color: #ffe0c7;
+  text-align: center;
+  font-size: 2em;
+}
+
+
+#title{
+  color: #5cff95;
+}
+
+
+
+#projects {
+  /* border: 2px solid dodgerblue; */
+  background-color: #b07cfe;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; 
+  text-align: center;
+}
+
+#projects h2{
+  grid-column: span 2;
+}
+
+.project-tile {
+  /* border: 2px solid orange; */
+}
+
+
+#contact {
+  /* border: 2px solid green; */
+  text-align: center;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  background-color: #8e8e6b;
+  margin: 0px;
+  padding: 20px;
+  font-size: 1.15rem;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+body {
+  font-family: "merriweather", sans-serif;
+  /* position: relative;
+  top: 70px; */
+}
+
+section h2{
+  /* border: 2px solid blue; */
+  margin-bottom: 0px;
+}
+
+#survey-image{
+  max-width: 100%;
+}
+
+#tribute-image{
+  max-width: 100%;
+}
+
+
+@media (max-width: 600px) {
+  #projects {
+    display: block;
+  }
+}
