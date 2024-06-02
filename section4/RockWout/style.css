@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+}
+#welcome-section {
+  box-sizing: border-box;
+  /* border: 2px solid green; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(
+    33deg, 
+    rgb(60, 60, 60) 0%, 
+    rgb(25, 25, 25) 100%);
+  color: rgba(255, 20, 0, 0.85);
+  margin-top: 18px;
+  font-size: 3em;
+  
+}
+
+#welcome-section h2 {
+  font-size: 0.9em;
+  font-style: italic;
+  color: rgba(240, 100, 20, 0.55);
+  margin-top: 0;
+
+  
+}
+
+#projects {
+  
+  /* border: 3px solid orange; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: rgba(5, 5, 5, 0.05);
+  text-align: center;
+}
+
+#projects h2 {
+  grid-column: span 2;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  /* grid-auto-rows: 50%; */
+  gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0px 4rem 4rem;
+  min-height: 100vh;
+}  
+
+.project-tile {
+  /* border: 3px solid purple; */
+  background: rgba(140, 138, 133, 1);
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+  border-radius: 5px;
+  font-family: Roboto, sans-serif;
+  padding: 2rem 0.5rem;
+  
+  
+  
+  
+}
+.project-tile:hover {
+  background-color: rgba(255, 20, 0, 0.85);
+  /* background-color: rgba(180,180,180,1); */
+  
+}
+
+.project-tile p:hover {
+  color: rgb(0, 0, 0);
+  
+}
+
+.project-tile p {
+  color: rgba(255, 20, 0, 0.85);
+  font-family: Roboto, sans-serif;
+  font-size: 1.4em;
+  font-weight: bold;
+  -webkit-text-stroke: 1px black;
+
+}  
+  
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: contain;
+    
+  
+}
+  
+nav ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(255, 20, 0, 0.85);
+  margin: 0;
+  color: rgba(100, 255, 245, 0.85);
+}
+
+#contact {
+  /* border: 3px solid lightblue; */
+  background-color: rgba(255, 20, 0, 0.85);
+  font-weight: 800;
+  padding: 1px;
+  
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+#profile-link:hover {
+  background-color: rgba(255, 255, 0, 0.7);
+  border-radius: 5px;
+ 
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100)
+}
+
+footer .container {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@media (max-width: 600px) {
+  #projects {
+    display:block;
+  }
+  #projects h2 {
+    grid-column: span 1;
+  }
+  .projects-grid {
+    display: block;
+  }
+
+    
+  #welcome-section {
+    font-size: 1em;
+
+  }
+
+  footer .container {
+    justify-content: center;
+  }
+}

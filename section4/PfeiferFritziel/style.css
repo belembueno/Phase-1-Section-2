@@ -1,0 +1,122 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#welcome-section {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  min-height: 100vh;
+}
+
+#projects {
+  /* border:2px solid #3333cc ; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+  font-family: jaro, sans serif;
+  color: black;
+  
+  
+  
+  
+}
+
+.project-tile {
+ border: 5px solid #f4ebeb;
+  text-align: center;
+  background-color: #979191;
+  font-family: jaro, sans serif;
+  
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  background-color: #eeeee8;
+  gap: 16px;
+  margin: 0px;
+  font-family: jaro, sans serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+
+
+#projects h2 {
+  grid-column: span 2;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.background-image {
+  background-image: url('images/coding.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+
+.social-icons {
+  display: grid;
+  font-size: 3rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: center;
+}
+
+
+.background-image h1 {
+  font-size: 2em;
+}
+
+.background-image p {
+  font-size: 1.2em;
+}
+
+.background-image h1,
+.background-image p {
+  position: absolute;
+  top: 50%;
+  
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+  
+  color: #ede9e9;
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #projects {
+    display: block;
+  }
+}

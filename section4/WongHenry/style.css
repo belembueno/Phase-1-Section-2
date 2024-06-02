@@ -1,0 +1,71 @@
+html {
+  background-color: #db3d3d;
+  height: 100%;
+  width: 100%;
+}
+
+#welcome-section {
+  box-sizing: border-box;
+  border: 0px solid red;
+  min-height: 100vh;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#projects {
+  border:0px solid #f4f4f5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #c93b3b;
+}
+
+.project-tile {
+  border: 2px solid #e22c2c;
+  font-family: "Anton", sans-serif;
+  background-color: #df2a2a;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  background-color: #c51616;
+  justify-content: space-around;
+  gap: 16px;
+  margin: 0px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  font-family: "Anton", sans-serif;
+  color: white
+}
+
+#contact {
+  border: 0px solid yellow;
+  font-family: "Anton", sans-serif;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  #projects {
+    display: block;
+  }
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 40px;
+  padding: 20px;
+}

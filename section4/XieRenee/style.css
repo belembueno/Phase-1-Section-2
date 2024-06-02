@@ -1,0 +1,78 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+a {
+  color: #0e4606;
+}
+
+.uniquifier {
+  font-family: "Danfo", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+  font-size: 3.5em;
+}
+
+body{
+  background-color: #ededde;
+  padding-bottom: 7px;
+}
+
+img{
+    width: 100%;
+    max-width: 3000px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+nav ul{
+  padding-left: 0px;
+  list-style: none;
+  display:flex;
+  gap:10px;
+  margin:0px;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+p{
+  text-align: center;
+}
+
+#navbar {
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  background-color: #d1dfc3;
+  height:40px;
+  
+}
+
+#welcome-section{
+  min-height:100vh;
+  text-align: center;
+  padding-top: 25%;
+}
+
+
+
+#projects{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+}
+
+#projects h2{
+  grid-column: span 3;
+  text-align: center;
+}
+
+@media (max-width:500px){
+  #projects{
+    display:block;
+  }
+}

@@ -1,0 +1,253 @@
+html {
+  height: 100%;
+  width: 100%;
+  
+}
+body {
+  margin: auto;
+  background: #222233;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  border: 7px solid white;
+}
+
+#welcome-section {
+  box-sizing: border-box;
+  min-height: 100vh; 
+  
+}
+
+/* nav bar parent */
+#navbar ul{
+  list-style: none;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #333;
+  border: 4px groove black;
+  gap:16px;
+  margin: 0px;
+  
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #cc3687;
+}
+
+#welcome-section h1 {
+  padding: 20px;
+  letter-spacing: 1em;
+  text-shadow: 2px 4px 10px #ffffff;
+  text-transform: uppercase;
+  margin: 50px;
+  text-align: center;
+  font-size: 2em;
+  
+}
+
+/* image */
+#img-div img:first-of-type {
+  width: 90%; 
+  max-width: 100%;
+  height: auto; 
+  display: block;
+  margin: 0 auto;
+  border: 1px inset #1c0436;
+  border-radius: 300px;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
+
+/* size of pic */
+#img-div {
+  padding: 80px;
+  background-color: #1c0436;
+  position: relative;
+  border: 3px groove #222233;
+  height: 100vh;
+  width: 50vw;
+  margin: auto;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  background-color: black;
+  color: #cc3687;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.projects-para p{
+  margin: 0px;
+  padding: 12px 20px;
+  border: 4px groove black;
+  color: #cc3687;
+  letter-spacing: 2px;
+  padding-right: 0;
+}
+.projects-para a {
+  text-decoration: none;
+  letter-spacing: 20px;
+  color: #ffff;
+  margin-left: 20px;
+   
+}
+
+#projects  {
+  margin: auto;
+  box-sizing: border-box;
+ 
+}
+
+
+#projects, .tile {
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 15px;
+ }
+
+.project-tile {
+  position: relative;
+  perspective: 1000px;
+  margin-bottom: 20px;
+  background-image: url(images/cloud.png);
+  text-align: center;
+  border: 1px groove black;
+  margin: auto;
+  height: 50vh;
+  width: 50vw;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.tile-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.project-tile:hover .tile-inner {
+  transform: rotateY(180deg);
+}
+
+.tile-front,
+.tile-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #cc3687, #ffffff);
+  backface-visibility: hidden;
+}
+
+.tile-back {
+  color: #222233;
+  transform: rotateY(180deg);
+  font-size: 15px;
+  background: #222233;
+  border: 1px groove #222233;
+}
+
+.tile-front .tile-para,
+.dosis {
+  text-align: justify;
+  padding: 10px;
+  line-height: 1.6;
+  background-color: #ffffff;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.tile-front .tile-heading,
+.dosis {
+  font-family: "Dosis", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+
+}
+
+.tile-front h2 {
+  font-size: 30px;
+  background-color: #222233;
+  color: #ffffff;
+}
+
+
+.tile {
+  box-shadow: 0 4px 8px 0 rgb(204, 54, 135, 0.2);
+  padding: 16px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ffffff;
+  margin: auto;
+  width: 650px;
+  display: flex;
+}
+
+footer {
+  background-color: #ffffff;
+  margin-top: 15px;
+  border: 2px groove #cc3687;
+  padding: 12px 20px;
+}
+
+@media (max-width: 850px) {
+  body {
+    background-color: #333; 
+    
+  }
+  #img-div {
+    margin: auto;
+    height: 80vh;
+     width: 25vw;
+  }
+  
+  /* parent */
+  #projects .tile {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 15px; */
+    border: 2px groove #cc3687;
+    margin: auto;
+    height: 110vh;
+    width: 50vw;
+    background-size: cover;
+    background-position: center;
+  }
+  /* child */
+  .project-tile {
+    margin: auto;
+    height: 50vh;
+    width: 50vw;
+  }
+  .tile-back {
+    margin: auto;
+    height: 50vh;
+     width: 50vw;
+  }
+  
+  #welcome-section h1{
+    text-align: center;
+  }
+  
+}

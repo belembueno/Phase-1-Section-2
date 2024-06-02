@@ -1,0 +1,112 @@
+body {
+
+  background-color: black;
+  color: white;
+  background-image: url(Images/Leaf_canopy.jpg);
+  background-size: contain;
+}
+
+
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+  display: flex;
+  gap: 30px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 40px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+
+#welcome-section {
+  min-height: 100vh;
+  background: radial-gradient(circle, rgba(20, 61, 250, .8) 26%, rgba(159, 4, 89, .7) 78%);
+
+}
+
+
+h1 {
+  padding: 30% 0 30% 0;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15vh;
+  text-align: center;
+
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding-top: 20px;
+  background-color: black;
+}
+
+#projects h2 {
+  grid-column: span 3;
+  text-align: center;
+}
+
+#projects p {
+  margin-left: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.project-tile {
+  text-align: center;
+}
+
+
+
+#contact {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 40px;
+  text-align: center;
+  background-color: black;
+}
+
+img {
+  width: 95%;
+  margin: 10px
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(159, 4, 89);
+}
+
+@media (max-width: 600px) {
+  #projects {
+    display: block;
+
+  }
+}
