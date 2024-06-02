@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+body {
+  background-color: #d5cdda;
+}
+
+h1 {
+  font-family: "Delius", cursive;
+  font-weight: bolder;
+  font-size: 60px;
+  text-align: center;
+  color: #9751ae;
+  padding-top: 20px;
+
+}
+
+#welcome-section {
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+  color: blueviolet;
+
+
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  background-color: #e1ce51;
+  gap: 16px;
+  margin: 0px;
+  font-size: 20px;
+  justify-content: right;
+
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+nav a {
+  color: #a06318;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 2rem;
+   
+  }
+
+
+
+.project-tile {
+  min-height: 30vh;
+  padding: 20px;
+ 
+
+}
+
+.project-tile p {
+  font-size: 16px;
+  text-align: center;
+}
+
+
+#img1,
+#img2 {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+#contact {
+  /* border: 2px solid p width: 100%; */
+  max-width: 350px;
+  height: 300px;
+  font-size: 16px;
+
+
+}
+
+@media (max-width: 600px) {
+  #projects {
+    display: block;
+  }
+}
