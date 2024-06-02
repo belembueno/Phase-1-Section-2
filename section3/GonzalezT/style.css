@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 30px 30px 50px 30px;
+  background-color: #f9e1cd;
+}
+
+body{
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+  }
+
+
+
+#navbar{
+  display: flex;
+   justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #f9e1cd;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+#welcome-section{
+     min-height: 100vh;
+
+  }
+
+@media (max-width:400px) {
+  nav {
+    text-align: center;
+  }
+}

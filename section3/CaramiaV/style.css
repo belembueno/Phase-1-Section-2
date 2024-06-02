@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 5vh;
+  color: #6b6e9e;
+  background-color: #250585;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #cc8df7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #8d94f7;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 10vw;
+  color: #250585;
+  text-align: center;
+  margin: 220px auto;
+}
+
+#projects {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #8d94f7;
+  padding: 50px 0;
+}
+
+#projects a {
+  color: #250585;
+}
+
+#projects a:hover {
+  color: #ffffff;
+}
+
+#codecamp {
+  color: #250585;
+  text-align: center;
+  height: 60px;
+  background-color: #d8d8f8;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#codecamp p {
+  margin: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+#contact {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100vw;
+  text-align: center;
+  background-color: #250585;
+  color: #cc8df7;
+}
+
+#contact a {
+  color: #8d94f7;
+}
+
+#contact a:hover {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  #projects {
+    display: block;
+  }
+}

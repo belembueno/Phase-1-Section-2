@@ -1,0 +1,154 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.ultra-regular {
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.forum-regular {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Forum", serif;
+  margin: 0px;
+}
+
+#navbar {
+  background-color: darkorange;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 15px 0px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+}
+
+ul a {
+  color: black;
+  text-decoration: none;
+}
+
+ul li {
+text-transform: uppercase;
+  text-align: center;
+}
+
+ul a:hover{
+  background-color: white;
+}
+
+#welcome-section {
+  /* box-sizing: border-box; */
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Ultra", serif;
+  font-size: 100px;
+  margin-top: 120px;
+  margin-left: 25px;
+}
+
+#welcome-section p {
+  font-size: 20px;
+  margin-left: 25px;
+  margin-right: 50px;
+  padding: 5px;
+  border: 7px solid pink;
+}
+
+
+.grid-parent {
+  border: 12px solid orange;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 20px 20px 2px 20px;
+}
+
+h2 {
+  font-size: 35px;
+  margin-top: 0px;
+  margin-left: 25px;
+}
+
+
+.project-tile img {
+  width: 100%;
+  max-height: 20vh;
+  object-fit: cover;
+}
+
+.project-tile p, a {
+  color: black;
+  font-size: 17px;
+  margin-top: 5px;
+  
+}
+
+.project-tile a:hover, .project-tile p:hover {
+  font-size: 19px;
+  margin-bottom: 0px;
+  background-color: #f9e1e5;
+  border-radius: 2px;
+  
+}
+
+#contact {
+  margin: 30px 40px 40px 40px;
+  text-align: center;
+  color: black;
+  
+}
+
+#contact a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#here {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#contact a:hover{
+  background-color: orange;
+  font-size: 18px;
+}
+
+#date {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 0px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+h1{
+  font-size: 85px;
+}
+ 
+  .grid-parent {
+    display: block;
+  }
+
+  .project-tile a:hover, .project-tile p:hover {
+    margin-bottom: 15px;
+    font-size: 17px;
+  }
+}
