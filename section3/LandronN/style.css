@@ -1,0 +1,58 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+#navbar {
+  background-color: lightcyan;
+  justify-content: space-between;
+  top: 0;
+  width: 100vw;
+  position: fixed;
+  align-items: center;
+}
+
+#welcome-section {
+  /*border: 3px solid blue;*/
+  height: 100vh;
+  width: 100%;
+  text-align: center; 
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(166,29,253,1) 50%, rgba(149,108,212,1) 77%, rgba(252,176,69,1) 100%);
+}
+
+#projects {
+  /*border: 1px solid #3ffb66;*/
+  text-align: center; 
+  background: rgba(149,108,212,1) 77%;
+}
+
+.project-tile {
+ /*border: 3px solid blue;*/
+  padding: 20px;
+  /*margin: 0px;*/
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 10px;
+}
+
+img {
+  max-width: 45%; 
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: yellow;
+  }
+}

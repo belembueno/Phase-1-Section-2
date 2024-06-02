@@ -1,0 +1,109 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+/* border: 2px solid white; */
+  width: 100%;
+}
+
+
+body {
+  background-color: #c6c2a9;
+  font-family: "Federant", serif;
+}
+
+h1 {
+  /* border: 2px solid red ; */
+  font-size: 90px;
+  color: #44445f;
+}
+
+p {
+  /* border: 2px solid gray; */
+  font-size: 30px;
+  padding-top: 20px;
+  color: #44445f;
+}
+
+#work {
+  /* border: 2px solid green; */
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-style: italic;
+  color: #44445f;
+}
+
+#welcome-section {
+  /* border: 2px solid purple; */
+  box-sizing: border-box;
+text-align: center;
+  padding-top: 40px;
+  min-height: 100vh;
+}
+
+#welcome-section p {
+  /* border: 2px solid yellow; */
+  font-size: 30px;
+  text-align: center;
+  align-content: center;
+  padding-right: 40px;
+  color: #44445f;
+}
+
+
+
+.gridparent {
+  /* border: 2px solid orange; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-tile {
+  /* border: 2px solid dodgerblue; */
+  padding: 20px;
+}
+
+.project-tile h2 {
+  /* border: 2px solid white; */
+  letter-spacing: 4px;
+  color: #44445f;
+  text-align: left;
+  font-size: 30px;
+  padding-right: 30px;
+  text-decoration-line: underline;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#navbar {
+  position: fixed;
+  top: 10px;
+  left: 0px;
+  right: 0px;
+  font-size: 30px;
+  color: #44445f;
+}
+
+
+#contact {
+  /* border: 2px orange; */
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+@media(max-width:500px) {
+  body {
+    background-color: yellow
+  }
+}

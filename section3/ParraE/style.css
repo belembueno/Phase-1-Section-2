@@ -1,0 +1,64 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif; 
+}
+
+
+header {
+  background-color: #7da2cf; 
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: Red
+  ;
+}
+
+
+#welcome-section {
+  height: 100vh;
+  background-color: #b6aa9d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#projects {
+  padding: 50px 0;
+}
+
+.project-tile {
+  border: 1px solid #5a7daf
+  padding: 20px;
+  margin: 20px;
+}
+
+.project-tile h2 {
+  margin-bottom: 10px;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: blue;
+}

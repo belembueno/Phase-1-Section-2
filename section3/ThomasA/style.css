@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color: #e2a6e2;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+#welcome-section{
+  box-sizing: border-box; /* This solves the min-height FCC error :)  */
+  min-height: 100vh;
+  padding: 50px;
+  font-size: 4rem;
+  color: white;
+   text-align: center;
+}
+
+#navbar ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0px;
+  background-color: #a568bb;
+  padding: 10px;
+}
+
+#navbar a{
+  color: white;
+}
+
+#projects{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+img{
+  width: 90%;
+}
+
+#contact{
+  text-align: center;
+}
+
+@media (max-width: 500px){
+  body{
+    background-color: #8181df;
+  }
+}

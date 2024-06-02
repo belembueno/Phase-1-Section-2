@@ -1,0 +1,340 @@
+html {
+  height: 100%;
+  width: 100%; 
+}
+body {
+  margin: 0; 
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+/** navigation bar **/
+#navbar {
+  background-color: #505050;
+  text-align: right;
+  position: fixed;
+  height: 64px;
+  z-index: 10;
+  width: 100%;
+}
+#navbar a {
+  color: #f2f2f2;
+  padding: 20px 30px;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+}
+#navbar a:hover {
+  background-color: white;
+  color: #262626;
+}
+@media screen and (max-width: 900px) {
+  #navbar {
+    background-color: #505050;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: auto;
+  }
+  #navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+/** welcome section **/ 
+@media screen and (min-width: 900px) {
+  #welcome-section {
+    background-color: #262626;
+    position: relative;
+    height: 100vh;
+    padding-top: 25%;
+  }
+  h1 {
+    color: #ffffff;
+    font-size: 70px;
+    text-align: center;
+  }
+  p {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  #welcome-section {
+    background-color: #262626;
+    position: relative;
+    height: 600px;
+    padding-top: 55%;
+  }
+  h1 {
+    color: #ffffff;
+    font-size: 70px;
+    text-align: center;
+  }
+  p {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+/** projects **/
+.project {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.project-tile {
+  position: relative;
+  width: 90%;
+  height: 600px;  
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 900px) {
+  .project-text-container {
+    position: absolute;
+    width: 360px;
+    top: 300px;
+    transform: translateY(-50%);
+  }
+  .project-text-title {
+    position: relative;
+    color: #ffffff;
+    font-size: 70px;
+    line-height: 56px;
+    margin-bottom: 18px;
+  }
+  .project-text-body {
+    position: relative;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .project-text-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #ffffff;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 900px) {
+  .project-text-container {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .project-text-title {
+    position: relative;
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 36px;
+    margin-bottom: 18px;
+  }
+  .project-text-body {
+    position: relative;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+  .project-text-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #ffffff;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+.project-text-container-left {
+  left: 0px;
+}
+/**project 1**/
+#project-1 {
+  background-color: #00bff3;
+}
+@media screen and (min-width: 900px) {
+  #image-1-container {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    top: 18%;
+    right: 10%;
+  }
+  #image_1 {
+    width: 100%;
+    height: 95%;
+    top: 5%;
+    position: relative;
+    border-radius: 2%;
+  }
+  #paperclip {
+    font-size: 48px;
+    color: #a37575;
+    position: absolute;
+    right: 50%;
+    top: 1%;
+    transform: rotate(49deg);
+  }
+}
+@media screen and (max-width: 900px) {
+  #image-1-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #image_1 {
+    width: 80%;
+    height: 50%;
+    top: 10%;
+    position: relative;
+    border-radius: 2%;
+  }
+  #paperclip {
+    font-size: 48px;
+    color: #a37575;
+    position: absolute;
+    right: 50%;
+    top: 7%;
+    transform: rotate(45deg);
+  }
+}
+/**project 2**/
+.project-text-container-right {
+  right: 0px;
+}
+#project-2 {
+  background-color: #f9bf3b;
+}
+@media screen and (min-width: 900px) {
+  #image-2-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #image_2 {
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    border-radius: 2%;
+    mix-blend-mode: multiply;
+  }
+}
+@media screen and (max-width: 900px) {
+  #image-2-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #image_2 {
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    border-radius: 2%;
+    mix-blend-mode: multiply;
+    top: 29%;
+  }
+}
+/**project 3**/
+#project-3 {
+  background-color: #c951f5;
+}
+@media screen and (min-width: 900px) {
+  #image-3-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+    float: right;
+  }
+  #spinner {
+    font-size: 200px;
+    position: absolute;
+    top: 30%;
+  }
+  h2 {
+    position: absolute;
+    font-size: 30px;
+    top: 63%;
+  } 
+}
+@media screen and (max-width: 900px) {
+  #image-3-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #spinner {
+    position: absolute;
+    font-size: 190px;
+    top: 45%;
+  }
+  h2 {
+    position: absolute;
+    font-size: 28px;
+    top: 75%;
+  } 
+}
+/** contacts **/
+footer {
+  position: relative;
+  height: 250px;
+  background-color: #262626;
+  text-align: center;
+  padding: 20px;
+}
+#avatar {    /** avatar head **/
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+  margin-bottom: 30px;
+}
+/** icons **/
+.icon {
+  position: relative;
+  margin-right: 24px;
+  display: inline-block;
+}
+#facebook {
+  color: #316FF6;
+  font-size: 30px;
+}
+#twitter {
+  color: #1DA1F2;
+  font-size: 30px;
+}
+#github {
+  color: #171515;
+  font-size: 30px;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: ghostwhite;
+}
+#linkedin {
+  color: #0a66c2;
+  font-size: 30px;
+}

@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  
+  font-style: normal;
+  
+}
+
+#welcome-section {
+  /* border: 3px solid red;  */
+  min-height: 100vh; 
+}
+                 
+
+h1 {
+  background-color: lightpink; 
+  font-family: "Montserrat", sans-serif; 
+   
+  font-weight: 900; 
+  font-style: normal;
+   }
+
+#projects {
+  border: 3px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  }
+
+img {
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 30%;
+  
+}
+
+.project-tile {
+  border: 3px;
+  padding: 20px;
+  }
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;}
+
+ #navbar { 
+  background-color: deeppink;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#contact {
+  background-color: lightpink; 
+  font-family: "Montserrat", sans-serif; 
+   
+  font-weight: 900; 
+  font-style: normal;
+}
+@media (max-width: 500px) {
+  body {
+    background-color: lightgreen;
+  }
+  #projects {
+    display: block;
+  }
+}

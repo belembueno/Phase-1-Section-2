@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  color: #000000;
+}
+
+#welcome-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+  background-color: #525852;
+  color: #FAF9FA;
+  padding: 20px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#projects {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  padding: 20px;
+  background-color: #E1DED6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-tile {
+  background-color: #AFBAC9;
+  border: yellow 2px solid;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 18px;
+  flex: 1;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 20px;
+  font-size: 40px;
+
+}
+
+#navbar {
+  background-color: #9C8C78;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 50px;
+  font: white;
+}
+
+ul a {
+  color: #333333;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+
+h1 {
+  text-align: center;
+
+}
+
+#titlee {
+  font-size: 52px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.myprojects {
+  flex: wrap;
+  text-align: center;
+
+}

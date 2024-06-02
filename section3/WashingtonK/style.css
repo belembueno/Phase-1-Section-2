@@ -1,0 +1,125 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #000000;
+  font-family: "Radio Canada Big";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: #0f803a;
+}
+
+body {
+  background-color: #2f2d2d;
+  font-family: "Radio Canada Big";
+}
+
+
+h1 {
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  margin: auto;
+  grid-column: span 2;
+  padding: 50px;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  /* font-weight: bold; */
+  color: white;
+}
+
+#welcome-section {
+  min-height: 100vh;
+}
+
+#welcome-section p {
+  text-align: justify;
+  line-height: 1.5;
+  display: block;
+  max-width: 700px;
+  margin: auto;
+  padding: 5px;
+}
+
+#welcome-section ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+#welcome-section li {
+  font-size: 18px;
+  color: hotpink;
+  line-height: 1.5;
+}
+
+#projects {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+#projects p {
+  color: black;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 60%;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+/* or #navbar ul */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#navbar {
+  background-color: hotpink;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#contact {
+  color: white;
+  background-color: hotpink;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#contact p {
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  #projects {
+    display: block;
+  }
+}
